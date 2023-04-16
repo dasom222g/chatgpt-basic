@@ -12,12 +12,83 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <style>
+      .hero {
+        margin-bottom: 50px; /* 기존 코드 유지하면서 간격 늘리기 */
+      }
+
+      .card {
+        transition: transform 0.3s ease-in-out; /* transform 속성 애니메이션 효과 설정 */
+      }
+
+      .card:hover {
+        transform: scale(1.05); /* 마우스 오버 시 확대 */
+      }
 
     </style>
 </head>
 
 <body>
-  
+  <!-- START: 히어로 -->
+    <section class="hero d-flex align-items-center" style="background-color: #A5D6A7; padding: 12px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 style="color: white; margin-bottom: 12px;">소미의 당근마켓</h1>
+                    <h2 style="color: white; margin-bottom: 12px;">집에 있는 물건을 팝니다!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: 히어로 -->
+    <!-- START: 카드 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/1600x900/?laptop" class="card-img-top" alt="노트북 이미지">
+            <div class="card-body">
+              <h5 class="card-title">노트북</h5>
+              <h6 class="card-subtitle mb-2 text-muted">10만원</h6>
+              <p class="card-text">선물받은 노트북 입니다. 사용법이 어려워 판매합니다!</p>
+              <a href="https://www.naver.com" target="_blank" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/1600x900/?camera" class="card-img-top" alt="카메라 이미지">
+            <div class="card-body">
+              <h5 class="card-title">카메라</h5>
+              <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
+              <p class="card-text">작년에 사서 한 번도 사용하지 않은 카메라입니다. 가격 내릴 수 있습니다!</p>
+              <a href="https://www.naver.com" target="_blank" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://source.unsplash.com/1600x900/?watch" class="card-img-top" alt="시계 이미지">
+            <div class="card-body">
+              <h5 class="card-title">시계</h5>
+              <h6 class="card-subtitle mb-2 text-muted">30만원</h6>
+              <p class="card-text">명품 시계입니다. 손목이 작아서 팔게 되었습니다.</p>
+              <a href="https://www.naver.com" target="_blank" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/청소기.jpeg" class="card-img-top" alt="청소기 이미지">
+            <div class="card-body">
+              <h5 class="card-title">청소기</h5>
+              <h6 class="card-subtitle mb-2 text-muted">25만원</h6>
+              <p class="card-text">명품 청소기입니다. 흡입력 짱입니다.</p>
+              <a href="https://www.naver.com" target="_blank" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- END: 카드 -->
 </body>
-
-</html>
